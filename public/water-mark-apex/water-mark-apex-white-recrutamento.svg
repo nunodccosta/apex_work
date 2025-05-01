@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="430" height="437" viewBox="0 0 430 437">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_12148" data-name="Retângulo 12148" width="430" height="437" transform="translate(112 6065)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Grupo_de_máscara_77" data-name="Grupo de máscara 77" transform="translate(-112 -6065)" clip-path="url(#clip-path)">
+    <g id="Grupo_88225" data-name="Grupo 88225" transform="translate(43.8 6065)" opacity="0.144">
+      <path id="Caminho_29219" data-name="Caminho 29219" d="M193.157,166.921,371.782,517.2h77.26L270.417,166.921Z" transform="translate(135.158 116.799)" fill="#f8f3ea"/>
+      <path id="Caminho_29220" data-name="Caminho 29220" d="M137.665,166.921,316.29,517.2h77.26L214.924,166.921Z" transform="translate(96.328 116.799)" fill="#f8f3ea"/>
+      <path id="Caminho_29221" data-name="Caminho 29221" d="M54.933,508.306h77.26l98.241-244.714-43.552-83.962Z" transform="translate(38.438 125.693)" fill="#f8f3ea"/>
+      <path id="Caminho_29222" data-name="Caminho 29222" d="M254.5,0,0,634H77.258L301.4,75.632Z" transform="translate(0 0)" fill="#f8f3ea"/>
+      <line id="Linha_1846" data-name="Linha 1846" x2="43.552" y2="83.963" transform="translate(225.321 305.323)" fill="#845b08"/>
+    </g>
+  </g>
+</svg>

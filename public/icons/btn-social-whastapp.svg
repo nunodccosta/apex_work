@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="btn-social-whastapp" transform="translate(-4337 22286)">
+    <rect id="Retângulo_4709" data-name="Retângulo 4709" width="32" height="32" rx="8" transform="translate(4337 -22286)" fill="#c09f55"/>
+    <g id="icon-instagram" transform="translate(4339 -22284)">
+      <path id="Caminho_1741" data-name="Caminho 1741" d="M0,0H28V28H0Z" fill="none"/>
+      <path id="Caminho_122872" data-name="Caminho 122872" d="M19.439,29.31a7.6,7.6,0,1,0-2.908-2.837l-.967,3.977Zm.4-10.211a.865.865,0,0,1,.589-.227h.231a.727.727,0,0,1,.683.478l.473,1.3a.379.379,0,0,1-.059.363l-.374.467a.653.653,0,0,0-.1.65,5.241,5.241,0,0,0,2.507,2.3.663.663,0,0,0,.764-.121l.414-.414a.382.382,0,0,1,.381-.093l1.255.4a.729.729,0,0,1,.507.694v.319a.882.882,0,0,1-.258.623c-1.223,1.207-3.252.322-4.567-.484A7.638,7.638,0,0,1,19.9,23.082c-1.487-2.244-.583-3.5-.057-3.982Z" transform="translate(-9.1 -8.75)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

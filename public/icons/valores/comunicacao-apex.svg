@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="74" viewBox="0 0 74 74">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Retângulo_12140" data-name="Retângulo 12140" width="74" height="74" transform="translate(387 3395)" fill="#fff"/>
+    </clipPath>
+  </defs>
+  <g id="comunicacao-apex" transform="translate(-387 -3395)" clip-path="url(#clip-path)">
+    <g id="Grupo_88323" data-name="Grupo 88323" transform="translate(-1194.362 3396.422)">
+      <path id="Caminho_122889" data-name="Caminho 122889" d="M1644.568,16.6a5.618,5.618,0,0,0-5.615-5.615h-41.18a5.615,5.615,0,0,0-5.615,5.615V61.519a1.872,1.872,0,0,0,3.2,1.32l10.068-10.126a1.868,1.868,0,0,1,1.327-.552h32.2a5.618,5.618,0,0,0,5.615-5.615Zm-37.436,11.231a3.744,3.744,0,1,1-3.744,3.744A3.745,3.745,0,0,1,1607.131,27.827Zm11.231,0a3.744,3.744,0,1,1-3.744,3.744A3.745,3.745,0,0,1,1618.362,27.827Zm11.231,0a3.744,3.744,0,1,1-3.743,3.744A3.745,3.745,0,0,1,1629.593,27.827Z" fill="#31513c" fill-rule="evenodd"/>
+    </g>
+  </g>
+</svg>
