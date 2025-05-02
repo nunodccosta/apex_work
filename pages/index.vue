@@ -2,16 +2,9 @@
   <div class="page-content">
     <!-- Banner -->
     <div class="banner">
-      <img
-        class="background desktop background-image"
-        alt="Banner Background of Solder"
-        src="/img/apex-banner.jpg"
-      />
-      <img
-        class="background mobile background-image"
-        alt="Banner Background of Solder - Mobile"
-        src="/img/banner-apex-mobile.jpg"
-      />
+      <img class="background desktop background-image" alt="Banner Background of Solder" src="/img/apex-banner.jpg" />
+      <img class="background mobile background-image" alt="Banner Background of Solder - Mobile"
+        src="/img/banner-apex-mobile.jpg" />
 
       <h1 class="banner-text">
         DO PLANEAMENTO À EXECUÇÃO, <br />
@@ -37,6 +30,7 @@ export default {};
   margin: 0;
   padding: 0;
 }
+
 .banner {
   position: relative;
   height: 100dvh;
@@ -58,6 +52,7 @@ export default {};
     object-position: center;
     object-fit: cover;
   }
+
   .banner-text {
     position: relative;
     font: normal normal bold 132px/124px Bebas Neue;

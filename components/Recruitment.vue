@@ -18,8 +18,10 @@
             alt="RecrutamentoCV"
             class="icon"
           />
-          <input id="name" type="text" class="input-el" />
-          <label class="input-label" for="name">Nome Completo</label>
+          <div class="input-case">
+            <input id="name" type="text" class="input-el" />
+            <label class="input-label" for="name">Nome Completo</label>
+          </div>
         </div>
         <div class="input-wrapper email">
           <img
@@ -27,8 +29,10 @@
             alt="RecrutamentoCV"
             class="icon"
           />
-          <input id="email" type="text" class="input-el" />
-          <label class="input-label" for="name">Email</label>
+          <div class="input-case">
+            <input id="email" type="text" class="input-el" />
+            <label class="input-label" for="name">Email</label>
+          </div>
         </div>
       </div>
       <div class="bot-group group">
@@ -38,8 +42,10 @@
             alt="Recrutamento Contacto"
             class="icon"
           />
-          <input id="contact" type="text" class="input-el" />
-          <label for="contact" class="input-label">Contactos</label>
+          <div class="input-case">
+            <input id="contact" type="text" class="input-el" />
+            <label for="contact" class="input-label">Contactos</label>
+          </div>
         </div>
         <div class="input-wrapper file">
           <img
@@ -116,13 +122,18 @@ export default {};
       }
       .input-wrapper {
         position: relative;
-        border-radius: 10px;
+
         display: flex;
         justify-content: flex-start;
         align-items: center;
         overflow: hidden;
-        padding: 20px 18px;
-        gap: 12px;
+        
+        border-radius: 10px;
+        background: #ffffffe6 0% 0% no-repeat padding-box;
+
+        padding:6px;
+
+
         &.name {
           width: 406px;
           height: 60px;
@@ -141,8 +152,17 @@ export default {};
         .icon {
           position: relative;
           z-index: 1;
+          padding:16px;
         }
 
+        .input-case{
+          position:relative;
+          height:100%;
+          width:100%;
+          display: flex;
+          flex-direction: column-reverse;
+        }
+        
         .input-label {
           position: relative;
           z-index: 1;
@@ -151,25 +171,28 @@ export default {};
           letter-spacing: 0.89px;
           color: #31513c;
           transition: all 150ms linear;
+          transform: translateY(80%);
         }
+        
         .input-el {
-          position: absolute;
+          position: relative;
+          height: 30px;
           width: 100%;
-          height: 100%;
-          top: 0;
+          bottom: 0;
           left: 0;
 
-          background: #ffffffe6 0% 0% no-repeat padding-box;
+          background-color:transparent;
           border: none;
-          padding-left: 50px;
 
           font: normal normal 600 16px/28px Plus Jakarta Sans;
           letter-spacing: 0.89px;
           color: #31513c;
 
           &:focus {
+            border: none;
+            outline: none;
             + .input-label {
-              transform: translateY(-100%);
+              transform: translateY(0%);
             }
           }
 
