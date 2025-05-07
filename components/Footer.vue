@@ -1,5 +1,5 @@
 <template>
-  <div class="footer-container">
+  <div class="footer-container" id="footer">
     <div class="images-wrapper">
       <img src="/img/apex-service-1.jpg" alt="Metalurgica" />
       <img src="/img/apex-service-2.jpg" alt="Soldadura" />
@@ -121,6 +121,7 @@ export default {};
         font: normal normal normal 16px/20px Plus Jakarta Sans;
         color: #ffffff;
         letter-spacing: -0.26px;
+
         &.first {
           margin-bottom: 22px;
         }
@@ -128,6 +129,7 @@ export default {};
         .semibold {
           font-weight: 600;
         }
+        
         .info {
           text-align: left;
           font: normal normal normal 12px/30px Plus Jakarta Sans;
@@ -139,6 +141,7 @@ export default {};
 
       // Block 3
       .schedule {
+      
         .footer-title {
           font: normal normal 800 16px/21px Plus Jakarta Sans;
           letter-spacing: -0.26px;

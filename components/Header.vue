@@ -5,27 +5,67 @@
         class="logo"
         alt="logo"
         width="225"
-        src="/logo-apex/logo-apex-work-white.svg"
+        src="/logo-apex/logo-apex-work.svg"
       />
       <ul class="nav-menu">
         <li>
-          <a title="Sobre Nós" href="/">Sobre Nós</a>
+          <a
+            title="Sobre Nós"
+            href="#about"
+            @click.prevent="handleScroll('about')"
+            >Sobre Nós</a
+          >
         </li>
         <li>
-          <a title="Áreas de Negócio" href="/">Áreas de Negócio</a>
+          <a
+            title="Áreas de Negócio"
+            href="#business"
+            @click.prevent="handleScroll('business')"
+            >Áreas de Negócio</a
+          >
         </li>
         <li>
-          <a title="Serviços" href="/">Serviços</a>
+          <a
+            title="Serviços"
+            href="#services"
+            @click.prevent="handleScroll('services')"
+            >Serviços</a
+          >
         </li>
         <li>
-          <a title="Contactos" href="/">Contactos</a>
+          <a
+            title="Contactos"
+            href="#footer"
+            @click.prevent="handleScroll('footer')"
+            >Contactos</a
+          >
         </li>
       </ul>
     </div>
   </nav>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+  methods: {
+    handleScroll(el_id) {
+      const el = document.getElementById(el_id);
+
+      if (el) {
+        const elementRect = el.getBoundingClientRect();
+        const elementTop = elementRect.top + window.pageYOffset;
+        const elementHeight = elementRect.height;
+        const viewportHeight = window.innerHeight;
+
+        const scrollTo = elementTop - viewportHeight / 2 + elementHeight / 2;
+
+        window.scrollTo({ top: scrollTo, behavior: "smooth" });
+      }
+    },
+  },
+};
 </script>
 <style lang="scss" scoped>
 .navbar {
@@ -37,6 +77,7 @@ export default {};
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 1;
 
   .navbar-container {
     width: 100%;

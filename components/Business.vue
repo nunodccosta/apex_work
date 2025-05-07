@@ -15,13 +15,6 @@
             essencial para garantir a operação contínua da maquinaria
             industrial.
           </h5>
-          <p class="paragraph-card">
-            Com equipas especializadas e estrutura flexível, asseguramos
-            intervenções durante paragens programadas, minimizando inatividade.
-            A colaboração entre engenharia e manutenção é crucial na elaboração
-            de relatórios e implementação de melhorias, garantindo eficiência e
-            conformidade com altos padrões de qualidade e segurança.
-          </p>
         </div>
       </div>
       <div class="card">
@@ -39,15 +32,6 @@
             Possuímos conhecimento técnico em processos TIG, MIG, MAG e SER, com
             habilidades especializadas em engenharia de soldagem.
           </h5>
-          <p class="paragraph-card">
-            Concebemos e desenvolvemos projetos, cumprindo padrões de qualidade
-            e qualificação, com profissionais certificados para instalar e
-            montar sistemas de tubulações em diversas áreas industriais. Na
-            instalação industrial, realizamos projetos de fabricação, pesquisas
-            e planos de segurança, gerindo e supervisionando o trabalho,
-            prestando assistência técnica a subcontratados, e realizando
-            desmontagem e transporte de equipamentos.
-          </p>
         </div>
       </div>
       <div class="card">
@@ -66,13 +50,6 @@
             soluções personalizadas, diagnóstico de avarias e controlo de
             processos para reduzir custos energéticos.
           </h5>
-          <p class="paragraph-card">
-            Na instrumentação, realizamos paragens programadas, modernização de
-            equipamentos e serviços de deteção de avarias, assistência técnica e
-            desmontagem. No setor de energia, realizamos auditorias e criamos
-            planos para reduzir o consumo, com monitorização contínua para
-            garantir uma gestão eficaz e sustentável.
-          </p>
         </div>
       </div>
       <div class="card">
@@ -95,7 +72,6 @@
           <p class="paragraph-card down">
             • Construção e Montagem de Dutos Industriais
           </p>
-
           <p class="paragraph-card down">
             • Construção e Montagem tubaria processo OD
           </p>
@@ -166,17 +142,18 @@ export default {};
       }
       .back-card {
         position: absolute;
-        background-color: #c09f55;
-        height: 100%;
-        width: 100%;
         top: 0;
         left: 0;
-        opacity: 0;
-        transition: opacity 150ms linear;
-        padding: 46px 38px;
+        
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        height: 100%;
+        width: 100%;
+        padding: 46px 38px;
+        opacity: 0;
+        background-color: #c09f55;
+        transition: opacity 250ms ease-in-out;
 
         &:hover {
           opacity: 1;
