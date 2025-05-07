@@ -90,4 +90,32 @@ export default {};
     z-index: -1;
   }
 }
+
+
+@media(max-width:1440px)
+{
+  .container-about {
+  height: 586.67px;
+
+  .wrapper-about {
+    max-width: 1073.33px;
+
+    .title {
+      margin-bottom: 26.67px;
+    }
+
+    .text-block {
+      .block {
+        max-width: 500px;
+      }
+    }
+  }
+
+  .watermark-about {
+    max-width: 389.33px;
+  }
+}
+
+}
+
 </style>

@@ -84,7 +84,10 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+
+
+};
 </script>
 <style lang="scss" scoped>
 .business-container {
@@ -144,7 +147,7 @@ export default {};
         position: absolute;
         top: 0;
         left: 0;
-        
+
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
@@ -180,6 +183,55 @@ export default {};
 
           &.down {
             margin-bottom: 14px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .business-container {
+    max-height: 900px;
+    .title {
+      margin-bottom: 34.67px;
+    }
+
+    .card-group {
+      gap: 16px; // scaled from 24px
+
+      .card {
+        width: 270.67px; // scaled from 406px
+        height: 405.33px; // scaled from 608px
+        border-radius: 16px; // scaled from 24px
+
+        .front-card {
+          padding: 30.67px 25.33px; // scaled from 46px 38px
+
+          .label-card {
+            font: normal normal bold 30.67px/30.67px Bebas Neue; // scaled from 46px/46px
+          }
+        }
+
+        .back-card {
+          padding: 30.67px 25.33px; // scaled from 46px 38px
+
+          .logo-card {
+            top: 26.67px; // scaled from 40px
+            right: 25.33px; // scaled from 38px
+            height: 25.33px; // scaled from 38px
+          }
+
+          .description-card {
+            font: normal normal 800 12px/17.33px Plus Jakarta Sans; // scaled from 18px/26px
+            margin-bottom: 9.33px; // scaled from 14px
+          }
+
+          .paragraph-card {
+            font: normal normal normal 10.67px/10.67px Plus Jakarta Sans; // scaled from 16px/16px
+            &.down {
+              margin-bottom: 9.33px; // scaled from 14px
+            }
           }
         }
       }

@@ -702,4 +702,42 @@ export default {};
     }
   }
 }
+
+@media (max-width:1440px) {
+  .services-container {
+  padding: 66.67px 0 133.33px 0; // scaled from 100px 0 200px
+
+  .title {
+    margin: 0 0 34.67px 0; // scaled from 52px
+  }
+
+  .tag-container {
+    .tag-group {
+      gap: 16px; // scaled from 24px
+      max-width: 1130.67px; // scaled from 1696px
+
+      .tag {
+        gap: 16px; // scaled from 24px
+        width: 270.67px; // scaled from 406px
+        height: 96px; // scaled from 144px
+        padding: 23.33px; // scaled from 35px
+        box-shadow: 0px 4px 13.33px #31513c2e; // scaled from 0px 6px 20px
+        border-radius: 10.67px; // scaled from 16px
+
+        .text-block {
+          .category-tag {
+            font: normal normal bold 16px/24.67px Plus Jakarta Sans; // scaled from 24px/37px
+            letter-spacing: 0.32px; // scaled from 0.48px
+          }
+
+          .description-tag {
+            font: normal normal normal 10.67px/13.33px Plus Jakarta Sans; // scaled from 16px/20px
+          }
+        }
+      }
+    }
+  }
+}
+
+}
 </style>

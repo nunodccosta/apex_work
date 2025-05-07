@@ -63,9 +63,12 @@ export default {};
   padding: 0;
   .images-wrapper {
     display: flex;
+    width: 100%;
     max-width: 1920px;
     img {
       width: 33.33%;
+      object-fit: cover;
+      object-position: center;
     }
   }
 
@@ -87,8 +90,6 @@ export default {};
       align-items: flex-start;
       height: 100%;
 
-
-      
       // Block 1
       .logo {
         width: 234px;
@@ -103,10 +104,9 @@ export default {};
       }
 
       // Block 2
-      &:nth-child(2){
-        margin-left:200px;
+      &:nth-child(2) {
+        margin-left: 200px;
       }
-
 
       .footer-title {
         font: normal normal 900 16px/21px Plus Jakarta Sans;
@@ -129,7 +129,7 @@ export default {};
         .semibold {
           font-weight: 600;
         }
-        
+
         .info {
           text-align: left;
           font: normal normal normal 12px/30px Plus Jakarta Sans;
@@ -141,7 +141,6 @@ export default {};
 
       // Block 3
       .schedule {
-      
         .footer-title {
           font: normal normal 800 16px/21px Plus Jakarta Sans;
           letter-spacing: -0.26px;
@@ -170,6 +169,70 @@ export default {};
           padding: 0;
           height: 32px;
           width: auto;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .footer-container {
+    .footer-wrapper {
+      padding: 30.67px 120px 32px 74.67px; // scaled from 46px 180px 48px 112px
+      height: 155.33px; // scaled from 233px
+      max-width: 1280px; // scaled from 1920px
+
+      .block {
+        .logo {
+          width: 156px; // scaled from 234px
+        }
+
+        .copy {
+          font: normal normal normal 9.33px/20px Plus Jakarta Sans; // scaled from 14px/30px
+          letter-spacing: -0.15px; // scaled from -0.22px
+        }
+
+        &:nth-child(2) {
+          margin-left: 133.33px; // scaled from 200px
+        }
+
+        .footer-title {
+          font: normal normal 900 10.67px/14px Plus Jakarta Sans; // scaled from 16px/21px
+          letter-spacing: -0.17px; // scaled from -0.26px
+        }
+
+        p {
+          font: normal normal normal 10.67px/13.33px Plus Jakarta Sans; // scaled from 16px/20px
+          letter-spacing: -0.17px; // scaled from -0.26px
+
+          &.first {
+            margin-bottom: 14.67px; // scaled from 22px
+          }
+
+          .semibold {
+            font-weight: 600;
+          }
+
+          .info {
+            font: normal normal normal 8px/20px Plus Jakarta Sans; // scaled from 12px/30px
+            letter-spacing: -0.13px; // scaled from -0.19px
+            opacity: 1;
+          }
+        }
+
+        .schedule {
+          .footer-title {
+            font: normal normal 800 10.67px/14px Plus Jakarta Sans; // scaled from 16px/21px
+            margin-bottom: 2.67px; // scaled from 4px
+          }
+
+          p {
+            font: normal normal normal 10.67px/14px Plus Jakarta Sans; // scaled from 16px/21px
+          }
+        }
+
+        .icon-group {
+          gap: 9.33px; // scaled from 14px
         }
       }
     }

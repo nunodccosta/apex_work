@@ -163,4 +163,42 @@ export default {};
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .values-container {
+    max-height: 900px;
+    .caption {
+      font: normal normal 500 12px/14.67px Plus Jakarta Sans;
+      margin-bottom: 4px;
+    }
+    .title {
+      margin-bottom: 34.67px;
+    }
+    .card-grid {
+      gap: 16px; // scaled from 24px
+      max-width: 1016px; // scaled from 1524px
+
+      .card {
+        max-width: 328px; // scaled from 492px
+        height: 186.67px; // scaled from 280px
+        padding: 20px 40px; // scaled from 30px 60px
+        box-shadow: 6.67px 21.33px 48px #0f0d231f; // scaled from 10px 32px 72px
+        border-radius: 16px; // scaled from 24px
+
+        .icon {
+          width: 49px; // scaled from 74px
+          height: 49px; // scaled from 74px
+        }
+
+        .card-caption {
+          font: normal normal bold 13.33px/21.33px Plus Jakarta Sans; // scaled from 20px/32px
+        }
+
+        .card-description {
+          font: normal normal normal 10.67px/14.67px Plus Jakarta Sans; // scaled from 16px/22px
+        }
+      }
+    }
+  }
+}
 </style>

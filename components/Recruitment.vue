@@ -149,6 +149,10 @@ export default {
         .icon {
           position: relative;
           z-index: 1;
+          object-fit: contain;
+          object-position: center;
+          height:20px;
+          width:20px;
         }
 
         .input-label,
@@ -205,5 +209,86 @@ export default {
       }
     }
   }
+}
+
+@media (max-width:1440px)
+{
+  .recruitment-container {
+  height: 437.33px; // scaled from 656px
+
+  .watermark {
+    left: 74.67px; // scaled from 112px
+    width:286.67px;
+  }
+
+  .input-container {
+    max-width: 500px; // scaled from 750px
+
+    .title {
+      margin: 0 0 13.33px 0; // scaled from 20px
+    }
+
+    .description {
+      font: normal normal normal 16px/22.67px Plus Jakarta Sans; // scaled from 24px/34px
+      margin: 0 0 24px 0; // scaled from 36px
+    }
+
+    .group {
+      gap: 16px; // scaled from 24px
+      margin: 0 0 10.67px 0; // scaled from 16px
+
+      .input-wrapper {
+        padding: 13.33px 12px; // scaled from 20px 18px
+        height: 40px; // scaled from 60px
+
+        &.name {
+          width: 270.67px; // scaled from 406px
+        }
+
+        &.email {
+          width: 213.33px; // scaled from 320px
+        }
+
+        &.contact,
+        &.file,
+        &.button {
+          width: 33%; // scaled from 33%
+        }
+
+        .icon{
+          height:15px;
+          width:15px;
+        }
+
+        .input-label,
+        .input-el::placeholder {
+          font: normal normal 600 10.67px/18.67px Plus Jakarta Sans; // scaled from 16px/28px
+          letter-spacing: 0.59px; // scaled from 0.89px
+        }
+
+        .input-el {
+          padding-left: 33.33px; // scaled from 50px
+
+          font: normal normal 600 10.67px/18.67px Plus Jakarta Sans; // scaled from 16px/28px
+          letter-spacing: 0.59px; // scaled from 0.89px
+
+          &.button {
+            background-color: #31513c;
+            padding: 0;
+          }
+
+          &.complete {
+            background-color: #31513C;
+
+            &+.input-label {
+              color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 }
 </style>

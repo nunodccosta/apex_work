@@ -82,4 +82,29 @@ export default {};
     }
   }
 }
+
+@media (max-width: 1440px) {
+  .environment-container {
+    .text-block {
+      max-width: 720px;
+      .environment-title {
+        font: normal normal bold 64px/58px Bebas Neue;
+        text-shadow: 0px 2px 12.67px #000000e2; // 3px and 19px scaled
+      }
+      .environment-paragraph {
+        font: normal normal normal 14.67px/20px Plus Jakarta Sans;
+        text-shadow: 0px 2px 6px #000000a0; // 3px and 9px scaled
+      }
+    }
+
+    .environment-button {
+      width: 34.67px;
+      height: 34.67px;
+      margin-top: 57.33px;
+      .icon{
+        height:100%;
+      }
+    }
+  }
+}
 </style>

@@ -38,6 +38,7 @@ $paragraph_black: #0a0909;
   }
 }
 
+// Until 992px only mobile
 @media (max-width: 992px) {
   .desktop {
     display: none;
@@ -47,6 +48,7 @@ $paragraph_black: #0a0909;
   }
 }
 
+// From 992px only desktop
 @media (min-width: 992px) {
   .desktop {
     display: block;
@@ -55,3 +57,32 @@ $paragraph_black: #0a0909;
     display: none;
   }
 }
+
+@media (max-width:1440px){
+  .title {
+    font: normal normal bold 34.67px/30.67px Plus Jakarta Sans;
+    color: $title_black;
+  
+    &.gold {
+      color: $primary;
+    }
+  
+    &.white {
+      color: white;
+    }
+  }
+  .paragraph {
+    font: normal normal normal 13.33px/22.67px Plus Jakarta Sans;
+    letter-spacing: 0px;
+    color: $paragraph_black;
+  
+    .scaled {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 38.67px;
+      letter-spacing: 0px;
+      color: $paragraph_black;
+    }
+  }    
+}
+
