@@ -197,8 +197,8 @@ export default {};
         }
 
         .footer-title {
-          font: normal normal 900 10.67px/14px Plus Jakarta Sans; // scaled from 16px/21px
-          letter-spacing: -0.17px; // scaled from -0.26px
+          font: normal normal normal 12px/16px Plus Jakarta Sans;
+          letter-spacing: -0.19px;
         }
 
         p {
@@ -233,6 +233,88 @@ export default {};
 
         .icon-group {
           gap: 9.33px; // scaled from 14px
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .footer-container {
+    .images-wrapper {
+      flex-direction: column;
+      height: fit-content;
+      width: 100%;
+      img {
+        width: 100%;
+      }
+    }
+    .footer-wrapper {
+      padding: 20px;
+      height: fit-content;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      .block {
+        &:nth-child(2) {
+          margin-left: 0px;
+          margin-bottom: 64px;
+        }
+        .logo {
+          width: 225px;
+          height: 52px;
+        }
+        .copy {
+          font: normal normal normal 12px/16px Plus Jakarta Sans;
+          letter-spacing: -0.19px;
+        }
+
+        .footer-title {
+          font: normal normal 800 16px/46px Plus Jakarta Sans;
+          letter-spacing: -0.26px;
+        }
+
+        p {
+          font: normal normal normal 16px/20px Plus Jakarta Sans;
+          letter-spacing: -0.26px;
+
+          &.first {
+            margin-bottom: 16px; // scaled from 22px
+          }
+
+          .semibold {
+            font-weight: 600;
+          }
+
+          .info {
+            font: normal normal normal 12px/16px Plus Jakarta Sans;
+            letter-spacing: -0.19px;
+            opacity: 1;
+          }
+        }
+        .schedule {
+          margin-bottom: 31px;
+          .footer-title {
+            font: normal normal 800 16px/46px Plus Jakarta Sans;
+            letter-spacing: -0.26px;
+            margin-bottom: 4px;
+          }
+
+          p {
+            font: normal normal normal 16px/30px Plus Jakarta Sans;
+            letter-spacing: -0.26px;
+          }
+        }
+        .icon-group {
+          gap: 24px;
+          .link {
+            height: 36px;
+            width: 36px;
+            img {
+              width: 100%;
+              height: 100%;
+            }
+          }
         }
       }
     }

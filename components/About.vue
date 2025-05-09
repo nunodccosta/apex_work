@@ -22,7 +22,7 @@
           </p>
         </div>
 
-        <div class="block right-side">
+        <div ref="right_side" class="block right-side">
           <p class="paragraph">
             Cada desenvolvimento em que nos envolvemos é moldado pela vasta
             experiência acumulada ao longo dos anos, refletindo o nosso empenho
@@ -40,6 +40,7 @@
             planeamento que assegura resultados eficazes.
           </p>
         </div>
+        <p class="mobile label-seemore" @click="toggleSee">{{ label_see }}</p>
       </div>
     </div>
 
@@ -51,7 +52,28 @@
   </div>
 </template>
 <script>
-export default {};
+export default {
+  data() {
+    return {
+      label_see: "VER MAIS",
+    };
+  },
+  methods: {
+    toggleSee() {
+      const rightBlock = this.$refs.right_side;
+
+      if (!rightBlock.classList.contains("show")) {
+        rightBlock.classList.add("show");
+        this.label_see = "VER MENOS";
+        return;
+      }
+
+      rightBlock.classList.remove("show");
+      this.label_see = "VER MAIS";
+      return;
+    },
+  },
+};
 </script>
 <style lang="scss">
 .container-about {
@@ -80,6 +102,18 @@ export default {};
         width: 50%;
       }
     }
+    .label-seemore {
+      display: none;
+      text-align: left;
+      font: normal normal bold 14px/18px Plus Jakarta Sans;
+      border-bottom: 2px solid #c09f55;
+      width: fit-content;
+      letter-spacing: 0px;
+      color: #c09f55;
+      text-transform: uppercase;
+      margin-top: 20px;
+      padding: 2px;
+    }
   }
   .watermark-about {
     position: absolute;
@@ -91,31 +125,65 @@ export default {};
   }
 }
 
-
-@media(max-width:1440px)
-{
+@media (max-width: 1440px) {
   .container-about {
-  height: 586.67px;
+    height: 586.67px;
 
-  .wrapper-about {
-    max-width: 1073.33px;
+    .wrapper-about {
+      max-width: 1073.33px;
 
-    .title {
-      margin-bottom: 26.67px;
+      .title {
+        margin-bottom: 26.67px;
+      }
+
+      .text-block {
+        .block {
+          max-width: 500px;
+        }
+      }
     }
 
-    .text-block {
-      .block {
-        max-width: 500px;
+    .watermark-about {
+      max-width: 389.33px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .container-about {
+    height: unset;
+    padding: 94px 20px 72px 20px;
+    .wrapper-about {
+      .text-block {
+        position: relative;
+        flex-direction: column;
+        gap: 20px;
+        .block {
+          width: 100%;
+        }
+        .left-side {
+          background-color: white;
+          z-index: 1000;
+        }
+
+        .right-side {
+          display: block;
+          position: relative;
+          height: 0px;
+          overflow: hidden;
+
+          transition: all 250ms linear;
+
+          &.show {
+            display: flex;
+            position: relative;
+            height: 504px;
+          }
+        }
+      }
+      .label-seemore {
+        display: block;
       }
     }
   }
-
-  .watermark-about {
-    max-width: 389.33px;
-  }
 }
-
-}
-
 </style>

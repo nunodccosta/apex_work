@@ -75,4 +75,14 @@ export default {};
     }
   }
 }
+
+@media (max-width: 992px) {
+  .banner {
+    // Perfect
+    .banner-text {
+      font: normal normal bold 54px/54px Bebas Neue;
+      max-width: 310px;
+    }
+  }
+}
 </style>

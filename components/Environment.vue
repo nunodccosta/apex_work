@@ -98,11 +98,37 @@ export default {};
     }
 
     .environment-button {
-      width: 34.67px;
-      height: 34.67px;
-      margin-top: 57.33px;
-      .icon{
-        height:100%;
+      width: 52px;
+      height: 52px;
+      margin-top: 60px;
+      .icon {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .environment-container {
+    .text-block {
+      max-width: 340px;
+      .environment-title {
+        font: normal normal bold 58px/54px Bebas Neue;
+        text-shadow: 0px 3px 19px #000000e2;
+        margin-bottom: 14px;
+      }
+      .environment-paragraph {
+        font: normal normal normal 16px/20px Plus Jakarta Sans;
+        text-shadow: 0px 3px 9px #000000a0;
+      }
+    }
+
+    .environment-button {
+      width: 52px;
+      height: 52px;
+      margin-top: 60px;
+      .icon {
+        height: 100%;
       }
     }
   }

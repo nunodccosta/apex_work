@@ -38,13 +38,39 @@ $paragraph_black: #0a0909;
   }
 }
 
-// Until 992px only mobile
-@media (max-width: 992px) {
-  .desktop {
-    display: none;
+body {
+  &.lock {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
   }
-  .mobile {
-    display: block;
+}
+
+@media (max-width: 1440px) {
+  .title {
+    font: normal normal bold 34.67px/30.67px Plus Jakarta Sans;
+    color: $title_black;
+
+    &.gold {
+      color: $primary;
+    }
+
+    &.white {
+      color: white;
+    }
+  }
+  .paragraph {
+    font: normal normal normal 13.33px/22.67px Plus Jakarta Sans;
+    letter-spacing: 0px;
+    color: $paragraph_black;
+
+    .scaled {
+      font-size: 28px;
+      font-weight: 500;
+      line-height: 38.67px;
+      letter-spacing: 0px;
+      color: $paragraph_black;
+    }
   }
 }
 
@@ -58,31 +84,25 @@ $paragraph_black: #0a0909;
   }
 }
 
-@media (max-width:1440px){
+// Until 992px only mobile
+@media (max-width: 992px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+
   .title {
-    font: normal normal bold 34.67px/30.67px Plus Jakarta Sans;
-    color: $title_black;
-  
-    &.gold {
-      color: $primary;
-    }
-  
-    &.white {
-      color: white;
+    font: normal normal bold 32px/40px Plus Jakarta Sans;
+  }
+
+  .paragraph {
+    font: normal normal normal 16px/24px Plus Jakarta Sans;
+    .scaled {
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 36px;
     }
   }
-  .paragraph {
-    font: normal normal normal 13.33px/22.67px Plus Jakarta Sans;
-    letter-spacing: 0px;
-    color: $paragraph_black;
-  
-    .scaled {
-      font-size: 28px;
-      font-weight: 500;
-      line-height: 38.67px;
-      letter-spacing: 0px;
-      color: $paragraph_black;
-    }
-  }    
 }
-
