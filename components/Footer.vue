@@ -19,15 +19,18 @@
           Av. Marechal Humberto Delgado, nº 248, 4760-012 V. N. Famalicão
         </p>
 
-        <p>
-          <span class="semibold">
-            geral@apexwork.pt • Tel. +351 252 118 679* • Tlm. +351 926 174 096
-            ** </span
-          ><br />
-          <span class="info">
-            *Chamada para rede fixa nacional **Chamada para rede móvel nacional
-          </span>
-        </p>
+        <div class="list">
+          <ul>
+            <p class="semibold">geral@apexwork.pt</p>
+            <li>Tel. +351 252 118 679*</li>
+            <li>Tlm. +351 926 174 096 **</li>
+          </ul>
+          <p class="info">
+            *Chamada para rede fixa nacional
+            <br class="mobile" />
+            **Chamada para rede móvel nacional
+          </p>
+        </div>
       </div>
       <div class="block">
         <div class="schedule">
@@ -59,6 +62,7 @@ export default {};
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: #31513c;
   padding: 0;
   .images-wrapper {
@@ -76,9 +80,9 @@ export default {};
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     padding: 46px 180px 48px 112px;
-    height: 233px;
+    width: 100%;
     max-width: 1920px;
 
     // To delete
@@ -88,7 +92,6 @@ export default {};
       flex-direction: column;
       justify-content: space-between;
       align-items: flex-start;
-      height: 100%;
 
       // Block 1
       .logo {
@@ -106,6 +109,7 @@ export default {};
       // Block 2
       &:nth-child(2) {
         margin-left: 200px;
+        padding-right: 30px;
       }
 
       .footer-title {
@@ -137,6 +141,33 @@ export default {};
           color: #ffffff;
           opacity: 1;
         }
+      }
+
+      .list {
+        width: 100%;
+        ul {
+          padding: 0;
+          margin: 0;
+          list-style: none;
+          p.semibold,
+          li {
+            display: inline-block;
+            margin-right: 4px;
+            font: normal normal 600 16px/21px Plus Jakarta Sans;
+            color: white;
+          }
+          li::before {
+            content: "•"; /* Adds the bullet */
+            margin-right: 4px; /* optional space after the bullet */
+          }
+        }
+      }
+
+      p.info {
+        font: normal normal normal 12px/16px Plus Jakarta Sans;
+        color: white;
+        letter-spacing: -0.19px;
+        white-space: pre;
       }
 
       // Block 3
@@ -175,64 +206,12 @@ export default {};
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .footer-container {
     .footer-wrapper {
-      padding: 30.67px 120px 32px 74.67px; // scaled from 46px 180px 48px 112px
-      height: 155.33px; // scaled from 233px
-      max-width: 1280px; // scaled from 1920px
-
-      .block {
-        .logo {
-          width: 156px; // scaled from 234px
-        }
-
-        .copy {
-          font: normal normal normal 9.33px/20px Plus Jakarta Sans; // scaled from 14px/30px
-          letter-spacing: -0.15px; // scaled from -0.22px
-        }
-
-        &:nth-child(2) {
-          margin-left: 133.33px; // scaled from 200px
-        }
-
-        .footer-title {
-          font: normal normal normal 12px/16px Plus Jakarta Sans;
-          letter-spacing: -0.19px;
-        }
-
-        p {
-          font: normal normal normal 10.67px/13.33px Plus Jakarta Sans; // scaled from 16px/20px
-          letter-spacing: -0.17px; // scaled from -0.26px
-
-          &.first {
-            margin-bottom: 14.67px; // scaled from 22px
-          }
-
-          .semibold {
-            font-weight: 600;
-          }
-
-          .info {
-            font: normal normal normal 8px/20px Plus Jakarta Sans; // scaled from 12px/30px
-            letter-spacing: -0.13px; // scaled from -0.19px
-            opacity: 1;
-          }
-        }
-
-        .schedule {
-          .footer-title {
-            font: normal normal 800 10.67px/14px Plus Jakarta Sans; // scaled from 16px/21px
-            margin-bottom: 2.67px; // scaled from 4px
-          }
-
-          p {
-            font: normal normal normal 10.67px/14px Plus Jakarta Sans; // scaled from 16px/21px
-          }
-        }
-
-        .icon-group {
-          gap: 9.33px; // scaled from 14px
+      .block .list {
+        ul li {
+          display: list-item;
         }
       }
     }
@@ -241,6 +220,8 @@ export default {};
 
 @media (max-width: 992px) {
   .footer-container {
+    position: relative;
+    padding-bottom: 92px;
     .images-wrapper {
       flex-direction: column;
       height: fit-content;
@@ -251,7 +232,6 @@ export default {};
     }
     .footer-wrapper {
       padding: 20px;
-      height: fit-content;
       flex-direction: column;
       justify-content: flex-start;
       align-items: flex-start;
@@ -267,6 +247,9 @@ export default {};
         .copy {
           font: normal normal normal 12px/16px Plus Jakarta Sans;
           letter-spacing: -0.19px;
+          position: absolute;
+          bottom: 17px;
+          left: 20px;
         }
 
         .footer-title {
@@ -281,7 +264,6 @@ export default {};
           &.first {
             margin-bottom: 16px; // scaled from 22px
           }
-
           .semibold {
             font-weight: 600;
           }
@@ -290,8 +272,31 @@ export default {};
             font: normal normal normal 12px/16px Plus Jakarta Sans;
             letter-spacing: -0.19px;
             opacity: 1;
+            display: block;
+            br.mobile {
+              line-height: 0;
+              margin: 0;
+            }
           }
         }
+
+        .list {
+          ul {
+            margin-bottom: 16px;
+            p.semibold,
+            li {
+              display: list-item;
+              margin-bottom: 8px;
+            }
+            li:last-child {
+              margin-bottom: 0;
+            }
+            li::before {
+              display: none;
+            }
+          }
+        }
+
         .schedule {
           margin-bottom: 31px;
           .footer-title {

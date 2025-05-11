@@ -243,7 +243,7 @@ export default {
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .recruitment-container {
     height: 437.33px; // scaled from 656px
 

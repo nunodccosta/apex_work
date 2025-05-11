@@ -83,7 +83,7 @@ export default {};
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .environment-container {
     .text-block {
       max-width: 720px;

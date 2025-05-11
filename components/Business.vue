@@ -100,23 +100,31 @@ export default {};
   height: 100dvh;
   max-height: 1080px;
 
+  padding: 20px;
+
   .title {
     margin-bottom: 52px;
   }
 
   .card-group {
     display: block;
+    width: 100%;
+    max-width: 100%;
+
     .card-wrapper {
       position: relative;
       height: auto;
       width: auto;
       display: flex;
       flex-direction: row;
+      justify-content: center;
       gap: 12px;
       .card {
+        flex: 1;
         position: relative;
-        width: 406px;
-        height: 608px;
+        max-width: 406px;
+        aspect-ratio: 406 / 608;
+        height: auto;
         border-radius: 24px;
         overflow: hidden;
 
@@ -195,7 +203,7 @@ export default {};
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .business-container {
     max-height: 900px;
     .title {
@@ -203,8 +211,6 @@ export default {};
     }
 
     .card-group {
-      gap: 16px; // scaled from 24px
-
       .card {
         width: 270.67px; // scaled from 406px
         height: 405.33px; // scaled from 608px
@@ -250,8 +256,10 @@ export default {};
 
 @media (max-width: 992px) {
   .business-container {
-    max-height: 667px;
-    padding: 20px;
+    max-height: unset;
+    height: fit-content;
+    padding: 70px 20px 70px 20px;
+
     .title {
       margin-bottom: 34.67px;
     }
@@ -259,16 +267,11 @@ export default {};
     .card-group {
       position: relative;
       width: 100%;
-      overflow: scroll;
-      gap: 12px;
+      height: auto;
+      overflow-y: scroll;
 
       .card-wrapper {
-        position: relative;
-        height: auto;
         width: fit-content;
-        display: flex;
-        flex-direction: row;
-        gap: 12px;
 
         .card {
           position: relative;

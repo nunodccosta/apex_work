@@ -45,7 +45,7 @@
     </div>
 
     <img
-      class="watermark-about"
+      class="watermark-about desktop"
       src="/water-mark-apex/water-mark-apex-gold-sobre-nos.svg"
       alt="watermark"
     />
@@ -120,12 +120,12 @@ export default {
     bottom: 0;
     left: 50%;
     max-width: 584px;
-    transform: translateX(50%);
+    transform: translateX(125px);
     z-index: -1;
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .container-about {
     height: 586.67px;
 

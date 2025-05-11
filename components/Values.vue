@@ -164,7 +164,7 @@ export default {};
   }
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 1600px) {
   .values-container {
     max-height: 900px;
     .caption {
@@ -218,12 +218,12 @@ export default {};
       gap: 16px;
       max-width: 100%;
       height: 360px;
-      overflow: scroll;
+      overflow-x: scroll;
+      box-shadow: 10px 32px 72px #0f0d231f;
       .card {
         height: 352px;
         width: 249px;
         padding: 40px 30px;
-        box-shadow: 10px 32px 72px #0f0d231f;
         border-radius: 24px;
 
         .icon {
