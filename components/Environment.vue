@@ -82,4 +82,55 @@ export default {};
     }
   }
 }
+
+@media (max-width: 1600px) {
+  .environment-container {
+    .text-block {
+      max-width: 720px;
+      .environment-title {
+        font: normal normal bold 64px/58px Bebas Neue;
+        text-shadow: 0px 2px 12.67px #000000e2; // 3px and 19px scaled
+      }
+      .environment-paragraph {
+        font: normal normal normal 14.67px/20px Plus Jakarta Sans;
+        text-shadow: 0px 2px 6px #000000a0; // 3px and 9px scaled
+      }
+    }
+
+    .environment-button {
+      width: 52px;
+      height: 52px;
+      margin-top: 60px;
+      .icon {
+        height: 100%;
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .environment-container {
+    .text-block {
+      max-width: 340px;
+      .environment-title {
+        font: normal normal bold 58px/54px Bebas Neue;
+        text-shadow: 0px 3px 19px #000000e2;
+        margin-bottom: 14px;
+      }
+      .environment-paragraph {
+        font: normal normal normal 16px/20px Plus Jakarta Sans;
+        text-shadow: 0px 3px 9px #000000a0;
+      }
+    }
+
+    .environment-button {
+      width: 52px;
+      height: 52px;
+      margin-top: 60px;
+      .icon {
+        height: 100%;
+      }
+    }
+  }
+}
 </style>

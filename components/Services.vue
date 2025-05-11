@@ -1,5 +1,5 @@
 <template>
-  <div class="services-container">
+  <div class="services-container" id="services">
     <h1 class="title">Prestação de serviços</h1>
     <div class="tag-container">
       <div class="tag-group">
@@ -636,7 +636,7 @@ export default {};
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 100px 0 200px 0;
+  padding: 100px 20px 200px 20px;
   .title {
     margin: 0 0 52px 0;
   }
@@ -663,9 +663,12 @@ export default {};
         border-radius: 16px;
 
         gap: 24px;
-        width: 406px;
-        height: 144px;
+        max-width: 406px;
         padding: 35px;
+        flex: 1;
+        height: auto;
+
+        aspect-ratio: 406 / 144;
 
         border: 2px solid transparent;
 
@@ -696,6 +699,85 @@ export default {};
             letter-spacing: 0px;
             color: #00000099;
             opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .services-container {
+    padding: 66.67px 0 133.33px 0; // scaled from 100px 0 200px
+
+    .title {
+      margin: 0 0 34.67px 0; // scaled from 52px
+    }
+
+    .tag-container {
+      .tag-group {
+        gap: 16px; // scaled from 24px
+        max-width: 1130.67px; // scaled from 1696px
+
+        .tag {
+          gap: 16px; // scaled from 24px
+          width: 270.67px; // scaled from 406px
+          height: 96px; // scaled from 144px
+          padding: 23.33px; // scaled from 35px
+          box-shadow: 0px 4px 13.33px #31513c2e; // scaled from 0px 6px 20px
+          border-radius: 10.67px; // scaled from 16px
+
+          .text-block {
+            .category-tag {
+              font: normal normal bold 16px/24.67px Plus Jakarta Sans; // scaled from 24px/37px
+              letter-spacing: 0.32px; // scaled from 0.48px
+            }
+
+            .description-tag {
+              font: normal normal normal 10.67px/13.33px Plus Jakarta Sans; // scaled from 16px/20px
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 992px) {
+  .services-container {
+    padding: 100px 20px 200px 20px; // scaled from 100px 0 200px
+
+    .title {
+      margin: 0 0 34.67px 0; // scaled from 52px
+    }
+
+    .tag-container {
+      .tag-group {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 12px;
+        width: 100%;
+        height: auto;
+
+        .tag {
+          gap: 16px;
+          width: 336px;
+          height: 132px;
+          padding: 29px 26px;
+          box-shadow: 0px 6px 20px #31513c2e;
+          border-radius: 16px;
+
+          .text-block {
+            .category-tag {
+              font: normal normal bold 20px/25px Plus Jakarta Sans;
+              letter-spacing: 0.4px;
+            }
+
+            .description-tag {
+              font: normal normal normal 14px/18px Plus Jakarta Sans;
+            }
           }
         }
       }

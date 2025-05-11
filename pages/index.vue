@@ -66,4 +66,23 @@ export default {};
     text-align: center;
   }
 }
+
+@media (max-width: 1600px) {
+  .banner {
+    // Perfect
+    .banner-text {
+      font: normal normal bold 88px/82px Bebas Neue;
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .banner {
+    // Perfect
+    .banner-text {
+      font: normal normal bold 54px/54px Bebas Neue;
+      max-width: 310px;
+    }
+  }
+}
 </style>
