@@ -12,9 +12,7 @@
     />
 
     <div class="text-block">
-      <h1 class="environment-title">
-        COMPROMISSO COM O PRESENTE, RESPONSABILIDADE COM O FUTURO.
-      </h1>
+      <h1 class="environment-title">COMPROMISSO COM O PRESENTE, RESPONSABILIDADE COM O FUTURO.</h1>
 
       <p class="environment-paragraph">
         Promovemos reciclagem, redução de resíduos e práticas conscientes para
