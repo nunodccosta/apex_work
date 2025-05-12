@@ -164,7 +164,7 @@ export default {};
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
   .values-container {
     max-height: 900px;
     .caption {

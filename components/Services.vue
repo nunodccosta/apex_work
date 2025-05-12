@@ -706,7 +706,7 @@ export default {};
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
   .services-container {
     padding: 66.67px 0 133.33px 0; // scaled from 100px 0 200px
 

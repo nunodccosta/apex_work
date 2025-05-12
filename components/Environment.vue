@@ -23,7 +23,10 @@
       </p>
     </div>
 
-    <a class="environment-button" href="/">
+    <a
+      class="environment-button"
+      href="/assets/ApexWork_Políticas_de_Sustentabilidade.pdf"
+    >
       <img
         src="/icons/btn-sustentabilidade.svg"
         alt="Icon Arrow Environment"
@@ -83,7 +86,7 @@ export default {};
   }
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1920px) {
   .environment-container {
     .text-block {
       max-width: 720px;
