@@ -86,6 +86,7 @@ export default {};
   }
 }
 
+
 @media (max-width: 1920px) {
   .environment-container {
     .text-block {
