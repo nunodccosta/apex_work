@@ -116,7 +116,7 @@ export default {};
     .text-block {
       max-width: 340px;
       .environment-title {
-        font: normal normal bold 58px/54px Bebas Neue;
+        font: normal normal bold 52px/54px Bebas Neue;
         text-shadow: 0px 3px 19px #000000e2;
         margin-bottom: 14px;
       }

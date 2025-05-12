@@ -205,7 +205,7 @@ export default {};
 @media (max-width: 992px) {
   .values-container {
     max-height: 667px;
-    padding: 20px;
+    padding: 20px 0px 20px 20px;
     .caption {
       font: normal normal medium 18px/22px Montserrat;
       margin-bottom: 14px;
