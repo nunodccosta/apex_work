@@ -67,7 +67,8 @@ export default {};
   }
 }
 
-@media (max-width: 1600px) {
+
+@media (max-width: 1920px) {
   .banner {
     // Perfect
     .banner-text {
@@ -80,7 +81,7 @@ export default {};
   .banner {
     // Perfect
     .banner-text {
-      font: normal normal bold 54px/54px Bebas Neue;
+      font: normal normal bold 52px/54px Bebas Neue;
       max-width: 310px;
     }
   }

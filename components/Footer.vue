@@ -206,7 +206,8 @@ export default {};
   }
 }
 
-@media (max-width: 1600px) {
+
+@media (max-width: 1920px) {
   .footer-container {
     .footer-wrapper {
       .block .list {
