@@ -203,6 +203,7 @@ export default {};
   }
 }
 
+
 @media (max-width: 1920px) {
   .business-container {
     max-height: 900px;
@@ -259,6 +260,7 @@ export default {};
     max-height: unset;
     height: fit-content;
     padding: 70px 0px;
+
 
     .title {
       margin-bottom: 34.67px;

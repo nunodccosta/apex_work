@@ -125,7 +125,9 @@ export default {
   }
 }
 
+
 @media (max-width: 1920px) {
+
   .container-about {
     height: 586.67px;
 

@@ -67,6 +67,7 @@ export default {};
   }
 }
 
+
 @media (max-width: 1920px) {
   .banner {
     // Perfect
