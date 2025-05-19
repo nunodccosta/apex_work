@@ -205,7 +205,7 @@ export default {};
 @media (max-width: 992px) {
   .values-container {
     max-height: 667px;
-    padding: 20px 0px 20px 20px;
+    padding: 20px 0px;
     .caption {
       font: normal normal medium 18px/22px Montserrat;
       margin-bottom: 14px;
@@ -218,14 +218,20 @@ export default {};
       gap: 16px;
       max-width: 100%;
       height: 360px;
+      padding-left: 20px;
       overflow-x: scroll;
-      box-shadow: 10px 32px 72px #0f0d231f;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
       .card {
         height: 352px;
         width: 249px;
         padding: 40px 30px;
         border-radius: 24px;
-
+        box-shadow: unset;
         .icon {
           width: 74px;
           height: 74px;

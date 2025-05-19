@@ -258,7 +258,7 @@ export default {};
   .business-container {
     max-height: unset;
     height: fit-content;
-    padding: 70px 0px 70px 20px;
+    padding: 70px 0px;
 
     .title {
       margin-bottom: 34.67px;
@@ -268,9 +268,16 @@ export default {};
       position: relative;
       width: 100%;
       height: auto;
-      overflow-y: scroll;
+      overflow-x: scroll;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+
+      &::-webkit-scrollbar {
+        display: none;
+      }
 
       .card-wrapper {
+        padding: 0 0 0 20px;
         width: fit-content;
 
         .card {

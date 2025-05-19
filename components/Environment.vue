@@ -76,12 +76,79 @@ export default {};
     }
   }
   .environment-button {
-    width: 52px;
-    height: 52px;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 19px;
+    width: 60px;
+    height: 60px;
     margin-top: 86px;
+    padding: 4px;
     text-decoration: none;
+    border: 0px;
+    border-radius: 35px;
+    will-change: width, border;
     &:hover {
-      filter: brightness(90%);
+      animation: button_styling 250ms forwards;
+      &::before {
+        transition: all 450ms ease-in;
+        opacity: 1;
+      }
+    }
+
+    &:not(:hover) {
+      animation: button_reverse 250ms forwards;
+      &::before {
+        opacity: 0;
+      }
+    }
+    &::before {
+      content: "Saber mais";
+      display: inline-block;
+      font: normal normal bold 16px/34px Plus Jakarta Sans;
+      letter-spacing: 0px;
+      color: #ffffff;
+      text-transform: uppercase;
+      text-align: center;
+      opacity: 0;
+    }
+
+    @keyframes button_styling {
+      0% {
+        border: 0px solid white;
+        opacity: 1;
+        width: 60px;
+      }
+      5% {
+        border: 1px solid white;
+      }
+      75% {
+        width: 200px;
+      }
+      100% {
+        border: 1px solid white;
+        width: 200px;
+        opacity: 0.86;
+      }
+    }
+    @keyframes button_reverse {
+      0% {
+        border: 1px solid white;
+        width: 200px;
+        opacity: 0.86;
+      }
+      100% {
+        border: 0px solid white;
+        opacity: 1;
+        width: 60px;
+      }
+    }
+
+    .icon {
+      z-index: -1;
+      height: 52px;
+      width: 52px;
     }
   }
 }
@@ -101,12 +168,9 @@ export default {};
     }
 
     .environment-button {
-      width: 52px;
-      height: 52px;
+      width: 60px;
+      height: 60px;
       margin-top: 60px;
-      .icon {
-        height: 100%;
-      }
     }
   }
 }
